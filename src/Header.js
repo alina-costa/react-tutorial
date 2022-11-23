@@ -6,11 +6,8 @@ function Header() {
       <header>
         <nav className="nav">
           <img src="./cow.png" alt="" className="logo" />
-          <ul className="nav-items">
-            <li>Pricing</li>
-            <li>About</li>
-            <li>Contact</li>
-          </ul>
+          <h2>Cows are Aliens</h2>
+          <h3>Cow Facts </h3>
         </nav>
       </header>
     </div>
