@@ -1,17 +1,32 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
+function Intro() {
+  return (
+    <div className="main-content">
+      <h1>Cows are aliens</h1>
+      <h3>In this essay I will:</h3>
+      <ol>
+        <li>explain why cows are aliens</li>
+        <li>explain why cows are from outer space</li>
+        <li>explain why cows aren't from earth.</li>
+      </ol>
+    </div>
+  );
+}
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+function Footer() {
+  return <footer>© 2022 SpaceCowsDevelopment</footer>;
+}
+
+function Page() {
+  return (
+    <div>
+      {/* <Header /> */}
+      <Intro />
+      <Footer />
+    </div>
+  );
+}
+
+ReactDOM.render(<Page />, document.getElementById("root"));
